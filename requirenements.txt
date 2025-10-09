@@ -1,0 +1,68 @@
+🧠 Course Structure
+✅ Module 1: Introduction to AI
+What is Artificial Intelligence?
+
+History and Evolution of AI
+
+Real-life examples of AI (YouTube, Alexa, ChatGPT)
+
+Quiz + Interactive Demo
+
+✅ Module 2: Types of AI
+Narrow AI vs General AI
+
+Machine Learning vs Deep Learning vs NLP
+
+Case studies
+
+Quiz
+
+✅ Module 3: How AI Learns (Machine Learning Basics)
+Supervised vs Unsupervised Learning
+
+Classification vs Regression
+
+Real-world examples (spam filter, movie recommendation)
+
+Visual explanations
+
+✅ Module 4: AI Tools and Apps for Students
+Grammarly, Notion AI, ChatGPT, Duolingo, etc.
+
+Live tool demos
+
+Ethical usage of AI tools
+
+Activity: Use an AI tool and reflect
+
+✅ Module 5: Ethics and Dangers of AI
+Deepfakes, Data Privacy, AI Bias
+
+Classroom Discussion: Should AI replace teachers?
+
+Quiz + Short writing task
+
+✅ Module 6: Getting Started with AI Projects
+No-code tools (Teachable Machine, Scratch, Google AutoML)
+
+Build a "Smile Detector" with Google Teachable Machine
+
+Project File Download
+
+✅ Module 7: Intro to Coding with AI (Optional)
+Python Basics (in browser-based IDEs like Replit)
+
+First ML model using Teachable Machine or Scratch
+
+Visual explanation of code (no heavy syntax)
+
+✅ Module 8: Mini Capstone Project
+Choose 1 idea:
+
+AI Personal Assistant
+
+Educational Quiz Bot
+
+AI Story Writer
+
+Presentation Template + Feedback Rubric
