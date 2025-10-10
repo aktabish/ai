@@ -14,3 +14,9 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !^/robots\.txt$
 RewriteCond %{REQUEST_URI} !^/sitemap\.xml$
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+#Order Allow,Deny
+#Allow from all
+#Deny from 43.225.98.124
+
+
