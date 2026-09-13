@@ -22,3 +22,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.FTP_SERVER_DIR }}
           protocol: ftp
+          state-name: .ftp-deploy-sync-state.json
