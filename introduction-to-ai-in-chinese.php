@@ -9,7 +9,7 @@
 	include 'db.php';
 	include 'page_visit.php';
 
-	// Handle AJAX quiz score submission
+	// Handle AJAX quiz score submission (kept for compatibility)
 	if (isset($_POST['action']) && $_POST['action'] === 'submit_quiz_score') {
 	    if (!isset($_SESSION['user_id'])) {
 	        echo json_encode(['success' => false, 'error' => 'Not signed in']);
@@ -17,7 +17,7 @@
 	    }
 	    $user_id = intval($_SESSION['user_id']);
 	    $score = intval($_POST['score']);
-	    $chapter = 'introduction-to-ai-1';
+	    $chapter = 'introduction-to-ai-in-chinese';
 	    $stmt = $conn->prepare("INSERT INTO quiz_results (user_id, chapter, score, submitted_at) VALUES (?, ?, ?, NOW())");
 	    $stmt->bind_param('isi', $user_id, $chapter, $score);
 	    if ($stmt->execute()) {
@@ -29,28 +29,28 @@
 	}
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 	<head>
 		<?php
 			include 'layout/head.php';
 		?>
 		<!-- Page Title -->
-		<title>Introduction to AI – Chapter 1 | AI Learner</title>
+		<title>人工智能入门——第1章 | AI Learner</title>
 
 		<!-- SEO Meta Description -->
-		<meta name="description" content="Start your journey into Artificial Intelligence. Learn what AI is, its core ideas, and why it matters – in simple, beginner-friendly language.">
+		<meta name="description" content="开启你的人工智能之旅。用通俗易懂的方式了解什么是AI、核心概念以及它为何重要——适合零基础初学者。">
 
 		<!-- Open Graph (for Facebook, LinkedIn, etc.) -->
-		<meta property="og:title" content="Introduction to AI – Chapter 1 | AI Learner">
-		<meta property="og:description" content="Understand what Artificial Intelligence means and how it's shaping the world. Ideal for beginners with no tech background.">
-		<meta property="og:url" content="https://ailearner.free.nf/introduction-to-ai-1">
+		<meta property="og:title" content="人工智能入门——第1章 | AI Learner">
+		<meta property="og:description" content="了解人工智能的含义以及它如何改变世界。非常适合没有技术背景的初学者。">
+		<meta property="og:url" content="https://ailearner.free.nf/introduction-to-ai-in-chinese">
 		<meta property="og:type" content="article">
 		<meta property="og:image" content="https://ailearner.free.nf/public/images/ailearner-180x180.png">
 
 		<!-- Twitter Card Meta -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:title" content="Introduction to AI – Chapter 1 | AI Learner">
-		<meta name="twitter:description" content="Beginner's guide to understanding AI – simple, clear, and non-technical.">
+		<meta name="twitter:title" content="人工智能入门——第1章 | AI Learner">
+		<meta name="twitter:description" content="新手友好的AI入门指南——简单、清晰、非技术化。">
 		<meta name="twitter:image" content="https://ailearner.free.nf/public/images/ailearner-180x180.png">
 		<meta name="google-site-verification" content="oOkuetuiQXo-KMyrEIFC2Yds0NYwKm3tEcwwKKn-qWY" />
 		<script type="application/ld+json">
@@ -58,7 +58,7 @@
 		  "@context": "https://schema.org",
 		  "@type": "Organization",
 		  "name": "AI Learner",
-		  "url": "https://ailearner.free.nf/introduction-to-ai-1",
+		  "url": "https://ailearner.free.nf/introduction-to-ai-in-chinese",
 		  "logo": "https://ailearner.free.nf/public/images/ailearner-180x180.png"
 		}
 		</script>
@@ -66,8 +66,8 @@
 		{
 		  "@context": "https://schema.org",
 		  "@type": "VideoObject",
-		  "name": "Introduction to AI – Video for Kids",
-		  "description": "Understand the basics of AI in a simple and fun way.",
+		  "name": "人工智能入门——儿童向视频",
+		  "description": "以简单有趣的方式理解AI基础知识。",
 		  "thumbnailUrl": [
 		    "https://img.youtube.com/vi/--QaVxL2lnw/hqdefault.jpg"
 		  ],
@@ -75,7 +75,7 @@
 		  "duration": "PT5M",
 		  "embedUrl": "https://www.youtube.com/embed/--QaVxL2lnw",
 		  "contentUrl": "https://www.youtube.com/watch?v=--QaVxL2lnw",
-		  "url": "https://ailearner.free.nf/introduction-to-ai-1",
+		  "url": "https://ailearner.free.nf/introduction-to-ai-in-chinese",
 		  "publisher": {
 		    "@type": "Organization",
 		    "name": "AI Learner",
@@ -100,9 +100,9 @@
 	  "@context": "https://schema.org",
 	  "@type": "BreadcrumbList",
 	  "itemListElement": [
-		{"@type":"ListItem","position":1,"name":"Home","item":"https://ailearner.free.nf/"},
-		{"@type":"ListItem","position":2,"name":"AI Course","item":"https://ailearner.free.nf/ai-course"},
-		{"@type":"ListItem","position":3,"name":"Chapter 1: Introduction to AI","item":"https://ailearner.free.nf/introduction-to-ai-1"}
+		{"@type":"ListItem","position":1,"name":"首页","item":"https://ailearner.free.nf/"},
+		{"@type":"ListItem","position":2,"name":"AI课程","item":"https://ailearner.free.nf/ai-course"},
+		{"@type":"ListItem","position":3,"name":"第1章：人工智能入门","item":"https://ailearner.free.nf/introduction-to-ai-in-chinese"}
 	  ]
 	}
 	</script>
@@ -115,112 +115,112 @@
 			<div class="hero-content">
 				<nav aria-label="Breadcrumb" class="breadcrumb">
 					<ol style="list-style:none;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;padding:0;margin:10px 0;width:100%;text-align:center;">
-						<li><a href="/">Home</a></li>
+						<li><a href="/">首页</a></li>
 						<li style="margin:0 6px;">></li>
-						<li><a href="/ai-course">AI Course</a></li>
+						<li><a href="/ai-course">AI课程</a></li>
 						<li style="margin:0 6px;">></li>
-						<li aria-current="page">Chapter 1: Introduction to AI</li>
+						<li aria-current="page">第1章：人工智能入门</li>
 					</ol>
 				</nav>
-				<h1>Chapter 1: Introduction to AI</h1>
+				<h1>第1章：人工智能入门</h1>
 			</div>
 		</section>
 
 		<div class="container">
 			<div class="section" aria-labelledby="kids-video">
-				<h2 id="kids-video">🎥 Video for Kids: Introduction to AI</h2>
-				<p style="margin-top: 4px;">Watch this short video to understand the basics of AI in a fun and simple way.</p>
+				<h2 id="kids-video">🎥 儿童向视频：人工智能入门</h2>
+				<p style="margin-top: 4px;">观看这段短视频，用轻松有趣的方式了解AI的基础知识。</p>
 				<div class="video-container" style="position:relative; width:100%; max-width:720px; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,.2); background:#000; margin:16px auto;">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/--QaVxL2lnw?si=Y6mcs5aLStPh0uAv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"></iframe>
 				</div>
 			</div>
 			<div class="section">
-				<h2>🤖 What is AI?</h2>
-				<p>AI stands for <strong>Artificial Intelligence</strong>. It means giving machines the ability to do tasks that usually need human thinking — like learning, understanding, or making decisions.</p>
-				<p>You may already use AI when you:</p>
+				<h2>🤖 什么是AI？</h2>
+				<p>AI 是 <strong>Artificial Intelligence</strong> 的缩写，即<strong>人工智能</strong>。它让机器具备完成通常需要人类思考的任务的能力——例如学习、理解或做出决策。</p>
+				<p>在这些场景中，你可能已经在使用AI：</p>
 				<ul class="custom-bullets">
-				  <li>Get directions on Google Maps</li>
-				  <li>See movie suggestions on Netflix</li>
-				  <li>Unlock your phone with Face ID</li>
+				  <li>在 Google 地图中获取路线</li>
+				  <li>在 Netflix 上看到电影推荐</li>
+				  <li>使用面容ID解锁手机</li>
 				</ul>
 			</div>
 
 			<div class="section">
-				<h2>🧠 Why Should I Care About AI?</h2>
-				<p>AI is everywhere — in homes, schools, hospitals, and workplaces. Understanding AI helps you:</p>
+				<h2>🧠 为什么要了解AI？</h2>
+				<p>AI 无处不在——在家里、学校、医院和工作场所。理解AI可以帮助你：</p>
 				<ul class="custom-bullets">
-				  <li>Use new technology confidently</li>
-				  <li>Stay informed about how decisions are made</li>
-				  <li>Be part of the conversation</li>
+				  <li>更自信地使用新技术</li>
+				  <li>了解决策是如何产生的</li>
+				  <li>参与关于AI的讨论</li>
 				</ul>
-				<p>You don’t need to code — just be curious!</p>
+				<p>你不需要会编程——保持好奇就够了！</p>
 			</div>
 
 			<div class="section">
-				<h2>🧩 What Can AI Do?</h2>
-				<p>AI can help machines:</p>
+				<h2>🧩 AI 能做什么？</h2>
+				<p>AI 可以帮助机器：</p>
 				<ul class="custom-bullets">
-				  <li>Learn from data</li>
-				  <li>Understand speech and text</li>
-				  <li>Recognize images</li>
-				  <li>Make smart guesses or decisions</li>
+				  <li>从数据中学习</li>
+				  <li>理解语音和文本</li>
+				  <li>识别图像</li>
+				  <li>做出合理的推断或决策</li>
 				</ul>
 			</div>
 
 			<div class="section">
-				<h2>🧱 What AI Can’t (and Shouldn’t) Do</h2>
-				<p>AI is powerful — but not perfect. It:</p>
+				<h2>🧱 AI 不能（也不应该）做什么</h2>
+				<p>AI 很强大，但并不完美。它：</p>
 				<ul class="custom-bullets">
-				  <li>Doesn’t think or feel like a human</li>
-				  <li>Can make mistakes if it learns from bad data</li>
-				  <li>Needs people to guide and review its actions</li>
+				  <li>不会像人类一样思考或感受</li>
+				  <li>如果学习了错误的数据，可能会犯错</li>
+				  <li>需要人类进行引导和审查</li>
 				</ul>
 				<div class="highlight">
-				  <strong>Ethics matter:</strong> AI affects privacy, fairness, and trust. Always ask how and why it's used.
+				  <strong>伦理很重要：</strong>AI 影响隐私、公平与信任。请始终询问它如何以及为何被使用。
 				</div>
 			</div>
 
 			<div class="section">
-				<h2>🎯 What You’ll Learn in This Course</h2>
+				<h2>🎯 本课程你将学到</h2>
 				<ul class="custom-bullets">
-				  <li>How AI fits into daily life</li>
-				  <li>The common terms people use when talking about AI</li>
-				  <li>How to ask smart questions about AI tools</li>
-				  <li>How to use AI safely and responsibly</li>
+				  <li>AI 如何出现在日常生活中</li>
+				  <li>人们谈论 AI 时常用的术语</li>
+				  <li>如何就 AI 工具提出聪明的问题</li>
+				  <li>如何安全且负责任地使用 AI</li>
 				</ul>
 			</div>
 
 			<div class="section">
-				<h2>💬 Key Takeaway</h2>
-				<p>You don’t need to be a tech expert. You just need to understand the basics — and you’ve already started.</p>
+				<h2>💬 关键信息</h2>
+				<p>你不必成为技术专家。只需理解基础——而你已经开始了。</p>
 			</div>
 
 			<div class="section">
 				<a href="/where-ai-shows-up-in-everyday-life-2" class="chapter-link" >
-					<h2>➡️ Up Next:</h2>
-					<p><strong>Chapter 2: Where AI Shows Up in Everyday Life</strong></p>
+					<h2>➡️ 接下来：</h2>
+					<p><strong>第2章：AI 在日常生活中的出现</strong></p>
 				</a>
 			</div>
 
 			<div class="section keep-learning" style="margin-top:24px;">
-                <h2>Keep Learning</h2>
+                <h2>继续学习</h2>
                 <ul class="custom-bullets">
-                    <li><a href="/where-ai-shows-up-in-everyday-life-2">Next: Chapter 2 – Where AI Shows Up in Everyday Life</a></li>
-                    <li><a href="/ai-course">Back to the full AI Course</a></li>
-                    <li>Related lessons:
+                    <li><a href="/where-ai-shows-up-in-everyday-life-2">下一步：第2章——AI 在日常生活中的出现</a></li>
+                    <li><a href="/ai-course">返回完整 AI 课程</a></li>
+                    <li>相关课程：
                         <ul class="custom-bullets">
-                            <li><a href="/ai-prompt-writing-guide">How to Write a Prompt (Chapter 3)</a></li>
-                            <li><a href="/how-ai-learns-from-data-4">How AI Learns from Data (Chapter 4)</a></li>
-                            <li><a href="/types-of-ai-tools-and-how-to-use-them-5">Types of AI Tools and How to Use Them (Chapter 5)</a></li>
+                            <li><a href="/ai-prompt-writing-guide">如何编写提示（第3章）</a></li>
+                            <li><a href="/how-ai-learns-from-data-4">AI 如何从数据中学习（第4章）</a></li>
+                            <li><a href="/types-of-ai-tools-and-how-to-use-them-5">AI 工具的类型及其用法（第5章）</a></li>
                         </ul>
                     </li>
                 </ul>
-                <a class="btn" href="https://www.youtube.com/@aiguruabsar" target="_blank" rel="noopener" style="background-color:#ff0033; color:#fff; padding:.6rem 1rem; border-radius:6px; text-decoration:none; display:inline-block; margin-top:8px;">Subscribe on YouTube</a>
+                <a class="btn" href="https://www.youtube.com/@aiguruabsar" target="_blank" rel="noopener" style="background-color:#ff0033; color:#fff; padding:.6rem 1rem; border-radius:6px; text-decoration:none; display:inline-block; margin-top:8px;">订阅 YouTube</a>
             </div>
 
             <div class="prev-next-container">
-				<a href="/ai-course" class="prev-link">← Previous | AI Course</a>
-				<a href="/where-ai-shows-up-in-everyday-life-2" class="next-link">Chapter 2 | Next →</a>
+				<a href="/ai-course" class="prev-link">← 上一页 | AI 课程</a>
+				<a href="/where-ai-shows-up-in-everyday-life-2" class="next-link">第2章 | 下一步 →</a>
 			</div>
 
 			<!--a class="btn" href="quiz1">Take Quiz</a-->
@@ -231,29 +231,29 @@
 		if (isset($_SESSION['user_id'])): ?>
 		<div class="container" style="margin-top: 40px; margin-bottom: 40px;">
 			<div class="section">
-				<h2>📝 Quick Quiz: Introduction to AI</h2>
+				<h2>📝 小测验：人工智能入门</h2>
 				<form id="ai-quiz-form">
 					<ol>
 						<li>
-							<strong>What does AI stand for?</strong><br>
-							<input type="radio" name="q1" value="a"> Artificial Intelligence<br>
-							<input type="radio" name="q1" value="b"> Automated Interaction<br>
-							<input type="radio" name="q1" value="c"> Advanced Internet<br>
+							<strong>AI 的全称是什么？</strong><br>
+							<input type="radio" name="q1" value="a"> Artificial Intelligence（人工智能）<br>
+							<input type="radio" name="q1" value="b"> Automated Interaction（自动化交互）<br>
+							<input type="radio" name="q1" value="c"> Advanced Internet（高级互联网）<br>
 						</li><br>
 						<li>
-							<strong>Which of these is NOT something AI can do?</strong><br>
-							<input type="radio" name="q2" value="a"> Learn from data<br>
-							<input type="radio" name="q2" value="b"> Recognize images<br>
-							<input type="radio" name="q2" value="c"> Think and feel like a human<br>
+							<strong>以下哪一项是 AI 不能做到的？</strong><br>
+							<input type="radio" name="q2" value="a"> 从数据中学习<br>
+							<input type="radio" name="q2" value="b"> 识别图像<br>
+							<input type="radio" name="q2" value="c"> 像人类一样思考和感受<br>
 						</li><br>
 						<li>
-							<strong>Why is it important to understand AI?</strong><br>
-							<input type="radio" name="q3" value="a"> To use new technology confidently<br>
-							<input type="radio" name="q3" value="b"> To be part of the conversation<br>
-							<input type="radio" name="q3" value="c"> Both a and b<br>
+							<strong>为什么理解 AI 很重要？</strong><br>
+							<input type="radio" name="q3" value="a"> 可以更自信地使用新技术<br>
+							<input type="radio" name="q3" value="b"> 可以参与���于 AI 的讨论<br>
+							<input type="radio" name="q3" value="c"> 以上两者皆是<br>
 						</li>
 					</ol>
-					<button type="button" class="btn" style="background-color: #0077c8; color: #fff; padding: .8rem 1.5rem; border: none; border-radius: 5px; margin-top: 1rem; display: inline-block; font-size: 1rem; cursor: pointer;" onclick="checkQuiz()">Submit Answers</button>
+					<button type="button" class="btn" style="background-color: #0077c8; color: #fff; padding: .8rem 1.5rem; border: none; border-radius: 5px; margin-top: 1rem; display: inline-block; font-size: 1rem; cursor: pointer;" onclick="checkQuiz()">提交答案</button>
 					<div id="quiz-result" style="margin-top: 20px; font-weight: bold;"></div>
 				</form>
 			</div>
@@ -271,15 +271,15 @@
 				q3: form.q3.value
 			};
 			if (!userAnswers.q1 || !userAnswers.q2 || !userAnswers.q3) {
-				result.innerHTML = 'Please answer all questions.';
+				result.innerHTML = '请回答所有问题。';
 				return;
 			}
 			if (userAnswers.q1 === answers.q1) score++;
 			if (userAnswers.q2 === answers.q2) score++;
 			if (userAnswers.q3 === answers.q3) score++;
-			result.innerHTML = `You scored ${score} out of ${total}.`;
+			result.innerHTML = `你得了 ${score} 分（共 ${total} 题）。`;
 			if (score === total) {
-				result.innerHTML += ' 🎉 Great job!';
+				result.innerHTML += ' 🎉 ��得好！';
 			}
 
 			// Highlight answers and disable inputs
@@ -319,7 +319,7 @@
 				nextBtn.className = 'btn';
 				nextBtn.id = 'next-chapter-btn';
 				nextBtn.style = 'background-color: #0077c8; color: #fff; padding: .8rem 1.5rem; border-radius: 5px; margin-top: 1.5rem; display: inline-block; font-size: 1rem; text-decoration: none;';
-				nextBtn.textContent = 'Next Chapter';
+				nextBtn.textContent = '下一章';
 				result.appendChild(document.createElement('br'));
 				result.appendChild(nextBtn);
 			}
@@ -333,23 +333,23 @@
 					try {
 						var resp = JSON.parse(xhr.responseText);
 						if (resp.success) {
-							result.innerHTML += '<br>Score saved!';
+							result.innerHTML += '<br>成绩已保存！';
 						} else {
-							result.innerHTML += '<br>Could not save score.';
+							result.innerHTML += '<br>成绩保存失败。';
 						}
 					} catch (e) {
-						result.innerHTML += '<br>Could not save score.';
+						result.innerHTML += '<br>成绩保存失败。';
 					}
 				}
 			};
-			xhr.send('score=' + encodeURIComponent(score) + '&chapter=introduction-to-ai-1');
+			xhr.send('score=' + encodeURIComponent(score) + '&chapter=introduction-to-ai-in-chinese');
 		}
 		</script>
 		<?php else: ?>
 		<div class="container" style="margin-top: 40px; margin-bottom: 40px;">
 			<div class="section">
-				<h2>📝 Quick Quiz: Introduction to AI</h2>
-				<p><a href="/signin">Sign in</a> to take the quiz and test your knowledge!</p>
+				<h2>📝 小测验：人工智能入门</h2>
+				<p><a href="/signin">登录</a>后即可参加测验并检测你的掌握情况！</p>
 			</div>
 		</div>
 		<?php endif; ?>

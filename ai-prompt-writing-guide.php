@@ -16,19 +16,19 @@
 			include 'layout/head.php';
 		?>
 		<!-- Page Title -->
-		<title>How to Write a Prompt – Simple Guide for Beginners – Chapter 3 | AI Learner</title>
+		<title>AI Prompt Writing Guide – Simple Guide for Beginners – Chapter 3 | AI Learner</title>
 
-		<link rel="canonical" href="https://ailearner.free.nf/how-to-write-a-prompt-3" />
-		<meta name="description" content="How to write a prompt: A complete prompt writing guide for beginners. Learn prompt engineering, AI prompt writing, and get the best prompt writing tips, examples, and easy steps for ChatGPT and other AI tools.">
+		<link rel="canonical" href="https://ailearner.free.nf/ai-prompt-writing-guide" />
+		<meta name="description" content="AI Prompt Writing Guide: A complete prompt writing guide for beginners. Learn prompt engineering, AI prompt writing, and get the best prompt writing tips, examples, and easy steps for ChatGPT and other AI tools.">
 		
-		<meta property="og:title" content="How to Write a Prompt – Simple Guide for Beginners – Chapter 3 | AI Learner">
+		<meta property="og:title" content="AI Prompt Writing Guide – Simple Guide for Beginners – Chapter 3 | AI Learner">
 		<meta property="og:description" content="Learn how to write better prompts for ChatGPT and other AI tools. Simple tips and examples for students and beginners.">
-		<meta property="og:url" content="https://ailearner.free.nf/how-to-write-a-prompt-3">
+		<meta property="og:url" content="https://ailearner.free.nf/ai-prompt-writing-guide">
 		<meta property="og:type" content="article">
 		<meta property="og:image" content="https://ailearner.free.nf/public/images/ailearner-180x180.png"> <!-- Replace with your actual image path -->
 
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:title" content="How to Write a Prompt – Simple Guide for Beginners – Chapter 3 | AI Learner">
+		<meta name="twitter:title" content="AI Prompt Writing Guide – Simple Guide for Beginners – Chapter 3 | AI Learner">
 		<meta name="twitter:description" content="Step-by-step prompt writing tips for ChatGPT, Bard, and more. Learn AI communication easily.">
 		<meta name="twitter:image" content="https://ailearner.free.nf/public/images/ailearner-180x180.png">
 		<meta name="google-site-verification" content="oOkuetuiQXo-KMyrEIFC2Yds0NYwKm3tEcwwKKn-qWY" />
@@ -38,15 +38,15 @@
 		  "@type": "Article",
 		  "mainEntityOfPage": {
 		    "@type": "WebPage",
-		    "@id": "https://ailearner.free.nf/how-to-write-a-prompt-3"
+		    "@id": "https://ailearner.free.nf/ai-prompt-writing-guide"
 		  },
-		  "headline": "How to Write a Prompt – Simple Guide for Beginners – Chapter 3",
+		  "headline": "AI Prompt Writing Guide – Simple Guide for Beginners – Chapter 3",
 		  "description": "Learn how to write clear and effective prompts for AI tools like ChatGPT. A beginner-friendly guide by AI Learner with tips and examples.",
 		  "image": "https://ailearner.free.nf/public/images/ailearner-180x180.png",
 		  "author": {
 		    "@type": "Organization",
 		    "name": "AI Learner",
-			"url": "https://ailearner.free.nf/how-to-write-a-prompt-3"
+			"url": "https://ailearner.free.nf/ai-prompt-writing-guide"
 		  },
 		  "publisher": {
 		    "@type": "Organization",
@@ -73,7 +73,7 @@
 		  "duration": "PT7M",
 		  "embedUrl": "https://www.youtube.com/embed/QOz0Ia9H6lo",
 		  "contentUrl": "https://www.youtube.com/watch?v=QOz0Ia9H6lo",
-		  "url": "https://ailearner.free.nf/how-to-write-a-prompt-3",
+		  "url": "https://ailearner.free.nf/ai-prompt-writing-guide",
 		  "publisher": {
 		    "@type": "Organization",
 		    "name": "AI Learner",
@@ -101,7 +101,7 @@
 	  "itemListElement": [
 		{"@type":"ListItem","position":1,"name":"Home","item":"https://ailearner.free.nf/"},
 		{"@type":"ListItem","position":2,"name":"AI Course","item":"https://ailearner.free.nf/ai-course"},
-		{"@type":"ListItem","position":3,"name":"Chapter 3: Prompt Writing – How to write a Prompt","item":"https://ailearner.free.nf/how-to-write-a-prompt-3"}
+		{"@type":"ListItem","position":3,"name":"Chapter 3: Prompt Writing – How to write a Prompt","item":"https://ailearner.free.nf/ai-prompt-writing-guide"}
 	  ]
 	}
 	</script>
@@ -119,10 +119,10 @@
 						<li style="margin:0 6px;">></li>
 						<li><a href="/ai-course">AI Course</a></li>
 						<li style="margin:0 6px;">></li>
-						<li aria-current="page">Chapter 3: Prompt Writing – How to write a Prompt</li>
+						<li aria-current="page">Chapter 3: AI Prompt Writing Guide</li>
 					</ol>
 				</nav>
-				<h1>Chapter 3: Prompt Writing – How to write a Prompt</h1>
+				<h1>Chapter 3: AI Prompt Writing Guide</h1>
 			</div>
 		</section>
 
@@ -394,7 +394,7 @@
 					}
 				}
 			};
-			xhr.send('score=' + encodeURIComponent(score) + '&chapter=how-to-write-a-prompt-3');
+			xhr.send('score=' + encodeURIComponent(score) + '&chapter=ai-prompt-writing-guide');
 		}
 		</script>
 		<?php else: ?>

@@ -1,3 +1,43 @@
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/923333112523?text=Hi%20from%20AI%20Learner%20👋
+" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+  <img src="/public/images/whatsapp.png" alt="WhatsApp" />
+</a>
+
+<style>
+.whatsapp-float {
+  position: fixed;
+  left: 20px; /* Left side */
+  bottom: 20px; /* Bottom position */
+  z-index: 99999;
+}
+
+.whatsapp-float img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp-float img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    left: auto;
+    right: 20px; /* move to right side */
+    bottom: 65px;
+  }
+
+  .whatsapp-float img {
+    width: 80px; /* slightly smaller for mobile */
+    height: 80px;
+  }
+}
+</style>
 
     <footer id="contact">
         <p><a href="/contact">Contact Us</a> | <a href="/personal-ai-tutor-online">AI Teacher</a> | <a href="/ai-course">AI Course</a> | <a href="/video-lectures">Video Lectures</a> | <a href="/free-ai-tools">Free AI Tools</a> | <a href="/ai-quiz.php">AI Quiz</a></p>

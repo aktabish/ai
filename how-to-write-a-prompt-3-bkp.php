@@ -22,7 +22,7 @@
 		
 		<meta property="og:title" content="How to Write a Prompt – Simple Guide for Beginners – Chapter 3 | AI Learner">
 		<meta property="og:description" content="Learn how to write better prompts for ChatGPT and other AI tools. Simple tips and examples for students and beginners.">
-		<meta property="og:url" content="https://ailearner.free.nf/how-to-write-a-prompt-3">
+		<meta property="og:url" content="https://ailearner.free.nf/ai-prompt-writing-guide">
 		<meta property="og:type" content="article">
 		<meta property="og:image" content="https://ailearner.free.nf/public/images/ailearner-180x180.png"> <!-- Replace with your actual image path -->
 
@@ -37,7 +37,7 @@
 		  "@context": "https://schema.org",
 		  "@type": "Organization",
 		  "name": "AI Learner",
-		  "url": "https://ailearner.free.nf/how-to-write-a-prompt-3",
+		  "url": "https://ailearner.free.nf/ai-prompt-writing-guide",
 		  "logo": "https://ailearner.free.nf/public/images/ailearner-180x180.png"
 		}
 		</script>
@@ -256,7 +256,7 @@
 					}
 				}
 			};
-			xhr.send('score=' + encodeURIComponent(score) + '&chapter=how-to-write-a-prompt-3');
+			xhr.send('score=' + encodeURIComponent(score) + '&chapter=ai-prompt-writing-guide');
 		}
 		</script>
 		<?php else: ?>

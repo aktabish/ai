@@ -147,7 +147,7 @@
 			<ul class="custom-bullets chapters-list">
 				<li><a href="/introduction-to-ai-1" >Chapter 1: <strong>Introduction to AI</strong></a></li>
 				<li><a href="/where-ai-shows-up-in-everyday-life-2" >Chapter 2: <strong>Where AI Shows Up in Everyday Life</strong></a></li>
-				<li><a href="/how-to-write-a-prompt-3" >Chapter 3: <strong>Prompt Writing – How to write a Prompt</strong></a></li>
+				<li><a href="/ai-prompt-writing-guide" >Chapter 3: <strong>AI Prompt Writing Guide</strong></a></li>
 				<li><a href="/how-ai-learns-from-data-4" >Chapter 4: <strong>How AI Learns from Data – The Basics</strong></a></li>
 				<li><a href="/types-of-ai-tools-and-how-to-use-them-5" >Chapter 5: <strong>Types of AI Tools and How to Use Them</strong></a></li>
 				<li><a href="/create-your-first-ai-project-6" >Chapter 6: <strong>Create Your First AI Project – Step by Step</strong></a></li>

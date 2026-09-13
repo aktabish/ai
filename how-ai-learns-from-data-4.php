@@ -41,6 +41,39 @@
 		  "logo": "https://ailearner.free.nf/public/images/ailearner-180x180.png"
 		}
 		</script>
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "VideoObject",
+		  "name": "How AI Learns from Data",
+		  "description": "Understand how AI models learn from examples during training.",
+		  "thumbnailUrl": [
+		    "https://img.youtube.com/vi/SEEVKveGk9s/hqdefault.jpg"
+		  ],
+		  "uploadDate": "2025-10-10T12:00:00+05:00",
+		  "duration": "PT6M",
+		  "embedUrl": "https://www.youtube.com/embed/SEEVKveGk9s",
+		  "contentUrl": "https://www.youtube.com/watch?v=SEEVKveGk9s",
+		  "url": "https://ailearner.free.nf/how-ai-learns-from-data-4",
+		  "publisher": {
+		    "@type": "Organization",
+		    "name": "AI Learner",
+		    "logo": {
+		      "@type": "ImageObject",
+		      "url": "https://ailearner.free.nf/public/images/ailearner-180x180.png"
+		    }
+		  },
+		  "potentialAction": {
+		    "@type": "WatchAction",
+		    "target": [
+		      {
+		        "@type": "EntryPoint",
+		        "urlTemplate": "https://www.youtube.com/watch?v=SEEVKveGk9s"
+		      }
+		    ]
+		  }
+		}
+		</script>
 
 	<script type="application/ld+json">
 	{
@@ -78,7 +111,7 @@
 				<h2 id="data-video">🎥 Video: How AI Learns from Data</h2>
 				<p style="margin-top: 4px;">Watch this short video to understand how AI learns from data using simple examples.</p>
 				<div class="video-container" style="position:relative; width:100%; max-width:720px; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,.2); background:#000; margin:16px auto;">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/SEEVKveGk9s?si=shv05Z92eSEnhvfK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"></iframe>
+					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/SEEVKveGk9s?si=shv05Z92eSEnhvfK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"></iframe>
 				</div>
 			</div>
 			<div class="section">
@@ -146,7 +179,7 @@
 						<ul class="custom-bullets">
 							<li><a href="/introduction-to-ai-1">Introduction to AI (Chapter 1)</a></li>
 							<li><a href="/where-ai-shows-up-in-everyday-life-2">Where AI Shows Up in Everyday Life (Chapter 2)</a></li>
-							<li><a href="/how-to-write-a-prompt-3">How to Write a Prompt (Chapter 3)</a></li>
+							<li><a href="/ai-prompt-writing-guide">AI Prompt Writing Guide (Chapter 3)</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -154,7 +187,7 @@
 			</div>
 
 			<div class="prev-next-container">
-				<a href="/how-to-write-a-prompt-3" class="prev-link">← Previous | Chapter 3</a>
+				<a href="/ai-prompt-writing-guide" class="prev-link">← Previous | Chapter 3</a>
 				<a href="/types-of-ai-tools-and-how-to-use-them-5" class="next-link">Chapter 5 | Next →</a>
 			</div>
 

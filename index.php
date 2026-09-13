@@ -263,7 +263,7 @@
 		  "itemListElement": [
 			{ "@type": "ListItem", "position": 1, "item": { "@type": "LearningResource", "name": "Introduction to AI", "url": "https://ailearner.free.nf/introduction-to-ai-1" } },
 			{ "@type": "ListItem", "position": 2, "item": { "@type": "LearningResource", "name": "AI in Everyday Life", "url": "https://ailearner.free.nf/where-ai-shows-up-in-everyday-life-2" } },
-			{ "@type": "ListItem", "position": 3, "item": { "@type": "LearningResource", "name": "Prompt Writing", "url": "https://ailearner.free.nf/how-to-write-a-prompt-3" } },
+			{ "@type": "ListItem", "position": 3, "item": { "@type": "LearningResource", "name": "Prompt Writing", "url": "https://ailearner.free.nf/ai-prompt-writing-guide" } },
 			{ "@type": "ListItem", "position": 4, "item": { "@type": "LearningResource", "name": "How AI Learns from Data", "url": "https://ailearner.free.nf/how-ai-learns-from-data-4" } },
 			{ "@type": "ListItem", "position": 5, "item": { "@type": "LearningResource", "name": "Types of AI Tools", "url": "https://ailearner.free.nf/types-of-ai-tools-and-how-to-use-them-5" } },
 			{ "@type": "ListItem", "position": 6, "item": { "@type": "LearningResource", "name": "Create Your First AI Project", "url": "https://ailearner.free.nf/create-your-first-ai-project-6" } },
@@ -289,7 +289,7 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Welcome to AI Learner – Learn AI the Easy and Fun Way!</h1>
+            <h1>AI Learner: Master Artificial Intelligence from Scratch (<?=date('Y')?> Guide)</h1>
             <p>AI Learner is a free and beginner-friendly website that teaches Artificial Intelligence (AI) to kids, students, and non-tech users. Our easy-to-follow chapters use simple language, real-world examples, and fun visuals to make learning AI exciting and understandable. Whether you're just curious or want to build your first AI project without coding, this is the perfect place to start your AI journey!</p>
             <a href="/ai-course" class="btn" aria-label="Start AI course">Start Learning</a>
         </div>
@@ -302,7 +302,7 @@
             <div class="carousel-track">
                 <a class="carousel-slide" href="/introduction-to-ai-1"><span class="carousel-icon">🤖</span><span class="carousel-label">Introduction to AI</span></a>
                 <a class="carousel-slide" href="/where-ai-shows-up-in-everyday-life-2"><span class="carousel-icon">🏠</span><span class="carousel-label">AI in Everyday Life</span></a>
-                <a class="carousel-slide" href="/how-to-write-a-prompt-3"><span class="carousel-icon">✍️</span><span class="carousel-label">Prompt Writing</span></a>
+                <a class="carousel-slide" href="/ai-prompt-writing-guide"><span class="carousel-icon">✍️</span><span class="carousel-label">Prompt Writing</span></a>
                 <a class="carousel-slide" href="/how-ai-learns-from-data-4"><span class="carousel-icon">📊</span><span class="carousel-label">How AI Learns from Data</span></a>
                 <a class="carousel-slide" href="/types-of-ai-tools-and-how-to-use-them-5"><span class="carousel-icon">🛠️</span><span class="carousel-label">Types of AI Tools</span></a>
                 <a class="carousel-slide" href="/create-your-first-ai-project-6"><span class="carousel-icon">🚀</span><span class="carousel-label">Create Your First AI Project</span></a>
@@ -399,8 +399,8 @@
 				<p>Use smart AI-powered tools, quizzes, and personalized learning paths to learn faster and stay engaged — ideal for students, kids, and non-programmers.</p>
 			</div>
 			<div class="feature">
-                <h3><a href="/how-to-write-a-prompt-3">Prompt Writing for ChatGPT, Bard, and Other AI Tools</a></h3>
-                <p>Master the skill of writing clear and <a href="/how-to-write-a-prompt-3"><i>effective prompts</i></a> to get accurate and useful results from AI models like ChatGPT, Bard, and Claude.</p>
+                <h3><a href="/ai-prompt-writing-guide">Prompt Writing for ChatGPT, Bard, and Other AI Tools</a></h3>
+                <p>Master the skill of writing clear and <a href="/ai-prompt-writing-guide"><i>effective prompts</i></a> to get accurate and useful results from AI models like ChatGPT, Bard, and Claude.</p>
             </div>
 			<div class="feature">
                 <h3><a href="/personal-ai-tutor-online" >AI Ustaad – Your Personal AI Teacher for Kids and Beginners</a></h3>

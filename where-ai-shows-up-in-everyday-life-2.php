@@ -43,6 +43,39 @@
 		  "logo": "https://ailearner.free.nf/public/images/ailearner-180x180.png"
 		}
 		</script>
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "VideoObject",
+		  "name": "Where AI Shows Up in Everyday Life",
+		  "description": "See how AI appears in everyday tools and activities at home, school, and work.",
+		  "thumbnailUrl": [
+		    "https://img.youtube.com/vi/JK6VMNbTX0Q/hqdefault.jpg"
+		  ],
+		  "uploadDate": "2025-10-10T12:00:00+05:00",
+		  "duration": "PT6M",
+		  "embedUrl": "https://www.youtube.com/embed/JK6VMNbTX0Q",
+		  "contentUrl": "https://www.youtube.com/watch?v=JK6VMNbTX0Q",
+		  "url": "https://ailearner.free.nf/where-ai-shows-up-in-everyday-life-2",
+		  "publisher": {
+		    "@type": "Organization",
+		    "name": "AI Learner",
+		    "logo": {
+		      "@type": "ImageObject",
+		      "url": "https://ailearner.free.nf/public/images/ailearner-180x180.png"
+		    }
+		  },
+		  "potentialAction": {
+		    "@type": "WatchAction",
+		    "target": [
+		      {
+		        "@type": "EntryPoint",
+		        "urlTemplate": "https://www.youtube.com/watch?v=JK6VMNbTX0Q"
+		      }
+		    ]
+		  }
+		}
+		</script>
 
 	<script type="application/ld+json">
 	{
@@ -168,7 +201,7 @@
 			</div>
 
 			<div class="section">
-				<a href="/how-to-write-a-prompt-3" class="chapter-link" >
+				<a href="/ai-prompt-writing-guide" class="chapter-link" >
 					<h2>➡️ Up Next:</h2>
 					<p><strong>Chapter 3: How to write a Prompt (Prompt Writing)</strong></p>
 				</a>
@@ -177,7 +210,7 @@
 			<div class="section keep-learning" style="margin-top:24px;">
 				<h2>Keep Learning</h2>
 				<ul class="custom-bullets">
-					<li><a href="/how-to-write-a-prompt-3">Next: Chapter 3 – How to Write a Prompt</a></li>
+					<li><a href="/ai-prompt-writing-guide">Next: Chapter 3 – How to Write a Prompt</a></li>
 					<li><a href="/ai-course">Back to the full AI Course</a></li>
 					<li>Related lessons:
 						<ul class="custom-bullets">
@@ -192,7 +225,7 @@
 
 			<div class="prev-next-container">
 				<a href="/introduction-to-ai-1" class="prev-link">← Previous | Chapter 1</a>
-				<a href="/how-to-write-a-prompt-3" class="next-link">Chapter 3 | Next →</a>
+				<a href="/ai-prompt-writing-guide" class="next-link">Chapter 3 | Next →</a>
 			</div>
 
 			<!--a class="btn" href="quiz1">Take Quiz</a-->
@@ -286,7 +319,7 @@
 			// Add Next Chapter button
 			if (!document.getElementById('next-chapter-btn')) {
 				const nextBtn = document.createElement('a');
-				nextBtn.href = '/how-to-write-a-prompt-3';
+				nextBtn.href = '/ai-prompt-writing-guide';
 				nextBtn.className = 'btn';
 				nextBtn.id = 'next-chapter-btn';
 				nextBtn.style = 'background-color: #0077c8; color: #fff; padding: .8rem 1.5rem; border-radius: 5px; margin-top: 1.5rem; display: inline-block; font-size: 1rem; text-decoration: none;';

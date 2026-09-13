@@ -45,6 +45,39 @@
 	<script type="application/ld+json">
 	{
 	  "@context": "https://schema.org",
+	  "@type": "VideoObject",
+	  "name": "Create Your First AI Project – Step by Step",
+	  "description": "Build your first AI project step-by-step, perfect for beginners.",
+	  "thumbnailUrl": [
+	    "https://img.youtube.com/vi/YmLLBIdH2DI/hqdefault.jpg"
+	  ],
+	  "uploadDate": "2025-10-10T12:00:00+05:00",
+	  "duration": "PT9M",
+	  "embedUrl": "https://www.youtube.com/embed/YmLLBIdH2DI",
+	  "contentUrl": "https://www.youtube.com/watch?v=YmLLBIdH2DI",
+	  "url": "https://ailearner.free.nf/create-your-first-ai-project-6",
+	  "publisher": {
+	    "@type": "Organization",
+	    "name": "AI Learner",
+	    "logo": {
+	      "@type": "ImageObject",
+	      "url": "https://ailearner.free.nf/public/images/ailearner-180x180.png"
+	    }
+	  },
+	  "potentialAction": {
+	    "@type": "WatchAction",
+	    "target": [
+	      {
+	        "@type": "EntryPoint",
+	        "urlTemplate": "https://www.youtube.com/watch?v=YmLLBIdH2DI"
+	      }
+	    ]
+	  }
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
 	  "@type": "Article",
 	  "mainEntityOfPage": {
 	    "@type": "WebPage",
@@ -65,8 +98,8 @@
 	      "url": "https://ailearner.free.nf/public/images/ailearner-180x180.png"
 	    }
 	  },
-	  "datePublished": "2025-05-20",
-	  "dateModified": "2025-08-07"
+	  "datePublished": "2025-05-20T12:00:00+05:00",
+	  "dateModified": "2025-08-07T12:00:00+05:00"
 	}
 	</script>
 <script type="application/ld+json">

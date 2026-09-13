@@ -42,6 +42,39 @@
 	  "logo": "https://ailearner.free.nf/public/images/ailearner-180x180.png"
 	}
 	</script>
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "VideoObject",
+	  "name": "Types of AI Tools",
+	  "description": "Explore different AI tools and how to use them.",
+	  "thumbnailUrl": [
+	    "https://img.youtube.com/vi/17RUaBtWJps/hqdefault.jpg"
+	  ],
+	  "uploadDate": "2025-10-10T12:00:00+05:00",
+	  "duration": "PT8M",
+	  "embedUrl": "https://www.youtube.com/embed/17RUaBtWJps",
+	  "contentUrl": "https://www.youtube.com/watch?v=17RUaBtWJps",
+	  "url": "https://ailearner.free.nf/types-of-ai-tools-and-how-to-use-them-5",
+	  "publisher": {
+	    "@type": "Organization",
+		"name": "AI Learner",
+		"logo": {
+		  "@type": "ImageObject",
+		  "url": "https://ailearner.free.nf/public/images/ailearner-180x180.png"
+		}
+	  },
+	  "potentialAction": {
+	    "@type": "WatchAction",
+		"target": [
+		  {
+			"@type": "EntryPoint",
+			"urlTemplate": "https://www.youtube.com/watch?v=17RUaBtWJps"
+		  }
+		]
+	  }
+	}
+	</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

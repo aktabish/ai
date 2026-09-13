@@ -23,15 +23,99 @@
 		<meta name="twitter:image" content="https://ailearner.free.nf/public/images/ailearner-180x180.png">
 		<meta name="google-site-verification" content="oOkuetuiQXo-KMyrEIFC2Yds0NYwKm3tEcwwKKn-qWY" />
 		
+		<!-- Structured Data: WebPage + ItemList + VideoObject for each video -->
 		<script type="application/ld+json">
 		{
 		  "@context": "https://schema.org",
-		  "@type": "ItemList",
+		  "@type": "WebPage",
 		  "name": "AI Course Video Lectures",
-		  "itemListElement": [
-		    { "@type": "ListItem", "position": 1, "name": "Introduction to AI – Video Lecture", "url": "https://ailearner.free.nf/introduction-to-ai-1" },
-		    { "@type": "ListItem", "position": 2, "name": "Where AI Shows Up in Everyday Life – Video Lecture", "url": "https://ailearner.free.nf/where-ai-shows-up-in-everyday-life-2" },
-		    { "@type": "ListItem", "position": 3, "name": "Prompt Writing – How to Write a Prompt – Video Lecture", "url": "https://ailearner.free.nf/how-to-write-a-prompt-3" }
+		  "url": "https://ailearner.free.nf/video-lectures",
+		  "description": "Watch free AI course videos for beginners: Introduction to AI, AI in everyday life, and prompt engineering tutorials.",
+		  "thumbnailUrl": "https://ailearner.free.nf/public/images/ailearner-180x180.png",
+		  "inLanguage": "en",
+		  "isPartOf": {"@type": "WebSite", "name": "AI Learner", "url": "https://ailearner.free.nf"},
+		  "primaryImageOfPage": {"@type": "ImageObject", "url": "https://ailearner.free.nf/public/images/ailearner-180x180.png"},
+		  "mainEntity": {
+		    "@type": "ItemList",
+		    "name": "AI Course Video Lectures",
+		    "itemListOrder": "http://schema.org/ItemListOrderAscending",
+		    "numberOfItems": 6,
+		    "itemListElement": [
+		      { "@type": "ListItem", "position": 1, "url": "https://ailearner.free.nf/introduction-to-ai-1", "name": "Introduction to AI – Video Lecture" },
+		      { "@type": "ListItem", "position": 2, "url": "https://ailearner.free.nf/where-ai-shows-up-in-everyday-life-2", "name": "Where AI Shows Up in Everyday Life – Video Lecture" },
+		      { "@type": "ListItem", "position": 3, "url": "https://ailearner.free.nf/ai-prompt-writing-guide", "name": "Prompt Writing – How to Write a Prompt – Video Lecture" },
+		      { "@type": "ListItem", "position": 4, "url": "https://ailearner.free.nf/how-ai-learns-from-data-4", "name": "How AI Learns from Data – Video Lecture" },
+		      { "@type": "ListItem", "position": 5, "url": "https://ailearner.free.nf/types-of-ai-tools-and-how-to-use-them-5", "name": "Types of AI Tools – Video Lecture" },
+		      { "@type": "ListItem", "position": 6, "url": "https://ailearner.free.nf/create-your-first-ai-project-6", "name": "Create Your First AI Project – Video Lecture" }
+		    ]
+		  },
+		  "hasPart": [
+		    {
+		      "@type": "VideoObject",
+		      "name": "Introduction to AI – Video for Kids",
+		      "description": "Understand the basics of AI in a simple and fun way.",
+		      "thumbnailUrl": ["https://img.youtube.com/vi/--QaVxL2lnw/hqdefault.jpg"],
+		      "uploadDate": "2025-10-10T12:00:00+05:00",
+		      "embedUrl": "https://www.youtube.com/embed/--QaVxL2lnw",
+		      "url": "https://ailearner.free.nf/introduction-to-ai-1",
+		      "publisher": {"@type": "Organization", "name": "AI Learner", "logo": {"@type": "ImageObject", "url": "https://ailearner.free.nf/public/images/ailearner-180x180.png"}},
+		      "duration": "PT5M"
+		    },
+		    {
+		      "@type": "VideoObject",
+		      "name": "Where AI Shows Up in Everyday Life",
+		      "description": "See real-life examples of AI at home, school, and work.",
+		      "thumbnailUrl": ["https://img.youtube.com/vi/JK6VMNbTX0Q/hqdefault.jpg"],
+		      "uploadDate": "2025-10-10T12:00:00+05:00",
+		      "embedUrl": "https://www.youtube.com/embed/JK6VMNbTX0Q",
+		      "url": "https://ailearner.free.nf/where-ai-shows-up-in-everyday-life-2",
+		      "publisher": {"@type": "Organization", "name": "AI Learner", "logo": {"@type": "ImageObject", "url": "https://ailearner.free.nf/public/images/ailearner-180x180.png"}},
+		      "duration": "PT6M"
+		    },
+		    {
+		      "@type": "VideoObject",
+		      "name": "Prompt Writing Basics",
+		      "description": "Learn to write clear prompts to get better results from AI tools.",
+		      "thumbnailUrl": ["https://img.youtube.com/vi/QOz0Ia9H6lo/hqdefault.jpg"],
+		      "uploadDate": "2025-10-10T12:00:00+05:00",
+		      "embedUrl": "https://www.youtube.com/embed/QOz0Ia9H6lo",
+		      "url": "https://ailearner.free.nf/ai-prompt-writing-guide",
+		      "publisher": {"@type": "Organization", "name": "AI Learner", "logo": {"@type": "ImageObject", "url": "https://ailearner.free.nf/public/images/ailearner-180x180.png"}},
+		      "duration": "PT7M"
+		    },
+		    {
+		      "@type": "VideoObject",
+		      "name": "How AI Learns from Data",
+		      "description": "Understand how AI models learn from examples during training.",
+		      "thumbnailUrl": ["https://img.youtube.com/vi/SEEVKveGk9s/hqdefault.jpg"],
+		      "uploadDate": "2025-10-10T12:00:00+05:00",
+		      "embedUrl": "https://www.youtube.com/embed/SEEVKveGk9s",
+		      "url": "https://ailearner.free.nf/how-ai-learns-from-data-4",
+		      "publisher": {"@type": "Organization", "name": "AI Learner", "logo": {"@type": "ImageObject", "url": "https://ailearner.free.nf/public/images/ailearner-180x180.png"}},
+		      "duration": "PT6M"
+		    },
+		    {
+		      "@type": "VideoObject",
+		      "name": "Types of AI Tools",
+		      "description": "Explore different AI tools and how to use them.",
+		      "thumbnailUrl": ["https://img.youtube.com/vi/17RUaBtWJps/hqdefault.jpg"],
+		      "uploadDate": "2025-10-10T12:00:00+05:00",
+		      "embedUrl": "https://www.youtube.com/embed/17RUaBtWJps",
+		      "url": "https://ailearner.free.nf/types-of-ai-tools-and-how-to-use-them-5",
+		      "publisher": {"@type": "Organization", "name": "AI Learner", "logo": {"@type": "ImageObject", "url": "https://ailearner.free.nf/public/images/ailearner-180x180.png"}},
+		      "duration": "PT8M"
+		    },
+		    {
+		      "@type": "VideoObject",
+		      "name": "Create Your First AI Project – Step by Step",
+		      "description": "Build your first AI project step-by-step, perfect for beginners.",
+		      "thumbnailUrl": ["https://img.youtube.com/vi/YmLLBIdH2DI/hqdefault.jpg"],
+		      "uploadDate": "2025-10-10T12:00:00+05:00",
+		      "embedUrl": "https://www.youtube.com/embed/YmLLBIdH2DI",
+		      "url": "https://ailearner.free.nf/create-your-first-ai-project-6",
+		      "publisher": {"@type": "Organization", "name": "AI Learner", "logo": {"@type": "ImageObject", "url": "https://ailearner.free.nf/public/images/ailearner-180x180.png"}},
+		      "duration": "PT9M"
+		    }
 		  ]
 		}
 		</script>
@@ -149,7 +233,7 @@
 					<div class="video-container">
 						<iframe src="https://www.youtube.com/embed/QOz0Ia9H6lo?si=27tS_vQijKZu634s" title="Prompt Writing Basics" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
 					</div>
-					<a class="btn-link" href="/how-to-write-a-prompt-3">Open Chapter 3</a>
+					<a class="btn-link" href="/ai-prompt-writing-guide">Open Chapter 3</a>
 				</div>
 
 				<div class="video-card">
@@ -230,7 +314,7 @@
 					<h3>Is there a free AI course with video lectures?</h3>
 					<p>Yes. Our <a href="/ai-course">AI course</a> includes free Artificial Intelligence video lessons for beginners. Watch online without registration.</p>
 					<h3>How can beginners learn Artificial Intelligence online?</h3>
-					<p>Start with our <a href="/introduction-to-ai-1">Introduction to AI</a>, continue with <a href="/where-ai-shows-up-in-everyday-life-2">AI in everyday life</a>, then practice with the <a href="/how-to-write-a-prompt-3">prompt engineering video</a>.</p>
+					<p>Start with our <a href="/introduction-to-ai-1">Introduction to AI</a>, continue with <a href="/where-ai-shows-up-in-everyday-life-2">AI in everyday life</a>, then practice with the <a href="/ai-prompt-writing-guide">prompt engineering video</a>.</p>
 					<h3>What is prompt engineering?</h3>
 					<p>Prompt engineering is the skill of writing clear prompts to guide AI tools like ChatGPT. It helps you get accurate, useful responses.</p>
 					<h3>Are these AI lessons suitable for kids and students?</h3>

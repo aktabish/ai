@@ -5,7 +5,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://ailearner.free.nf/</loc>
-    <lastmod>2025-05-15</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -13,7 +13,7 @@
   <!-- All Chapters -->
   <url>
     <loc>https://ailearner.free.nf/ai-course</loc>
-    <lastmod>2025-05-27</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -21,7 +21,7 @@
   <!-- Chapter 1 -->
   <url>
     <loc>https://ailearner.free.nf/introduction-to-ai-1</loc>
-    <lastmod>2025-05-15</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -29,15 +29,15 @@
   <!-- Chapter 2 -->
   <url>
 	  <loc>https://ailearner.free.nf/where-ai-shows-up-in-everyday-life-2</loc>
-    <lastmod>2025-05-15</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <!-- Chapter 3 -->
   <url>
-    <loc>https://ailearner.free.nf/how-to-write-a-prompt-3</loc>
-    <lastmod>2025-05-15</lastmod>
+    <loc>https://ailearner.free.nf/ai-prompt-writing-guide</loc>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -45,7 +45,7 @@
   <!-- Chapter 4 -->
   <url>
     <loc>https://ailearner.free.nf/how-ai-learns-from-data-4</loc>
-    <lastmod>2025-05-16</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -53,7 +53,7 @@
   <!-- Chapter 5 -->
   <url>
     <loc>https://ailearner.free.nf/types-of-ai-tools-and-how-to-use-them-5</loc>
-    <lastmod>2025-05-20</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -61,7 +61,7 @@
   <!-- Chapter 6 -->
   <url>
     <loc>https://ailearner.free.nf/create-your-first-ai-project-6</loc>
-    <lastmod>2025-05-20</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -69,7 +69,7 @@
   <!-- Chapter 7 -->
   <url>
     <loc>https://ailearner.free.nf/future-of-ai-7</loc>
-    <lastmod>2025-06-02</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -77,7 +77,7 @@
   <!-- Chapter 8 -->
   <url>
     <loc>https://ailearner.free.nf/how-to-make-your-resume-8</loc>
-    <lastmod>2025-06-03</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -85,7 +85,7 @@
   <!-- Chapter 9 -->
   <url>
     <loc>https://ailearner.free.nf/ai-creativity-art-music-storytelling-9</loc>
-    <lastmod>2025-06-05</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -93,7 +93,7 @@
   <!-- Chapter 10 -->
   <url>
     <loc>https://ailearner.free.nf/learn-a-new-language-using-ai-10</loc>
-    <lastmod>2025-06-13</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -101,7 +101,7 @@
   <!-- Chapter 11 -->
   <url>
     <loc>https://ailearner.free.nf/cooking-and-fashion-using-ai-11</loc>
-    <lastmod>2025-06-16</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -109,7 +109,7 @@
   <!-- Chapter 12 -->
   <url>
     <loc>https://ailearner.free.nf/islamic-ai-12</loc>
-    <lastmod>2025-06-26</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -117,7 +117,7 @@
   <!-- Free AI Tools Page -->
   <url>
     <loc>https://ailearner.free.nf/free-ai-tools</loc>
-    <lastmod>2025-07-31</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -125,7 +125,7 @@
   <!-- AI Playground Page -->
   <url>
     <loc>https://ailearner.free.nf/ai-playground</loc>
-    <lastmod>2025-08-18</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -133,7 +133,7 @@
   <!-- Chapter 13 -->
   <url>
     <loc>https://ailearner.free.nf/ai-for-developers</loc>
-    <lastmod>2025-07-14</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -141,7 +141,7 @@
   <!-- Chapter 14 -->
   <url>
     <loc>https://ailearner.free.nf/ai-for-healthcare</loc>
-    <lastmod>2024-07-16</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -149,7 +149,7 @@
   <!-- AI for Teachers Page -->
   <url>
     <loc>https://ailearner.free.nf/ai-for-teachers</loc>
-    <lastmod>2025-07-21</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -157,7 +157,7 @@
   <!-- AI in Marketing Page -->
   <url>
     <loc>https://ailearner.free.nf/ai-in-marketing</loc>
-    <lastmod>2025-07-23</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -165,7 +165,7 @@
   <!-- Quiz Page -->
   <url>
     <loc>https://ailearner.free.nf/ai-quiz</loc>
-    <lastmod>2025-07-31</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -173,7 +173,7 @@
   <!-- Sign In Page -->
   <url>
     <loc>https://ailearner.free.nf/signin</loc>
-    <lastmod>2025-05-15</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -181,7 +181,7 @@
   <!-- Sign Up Page -->
   <url>
     <loc>https://ailearner.free.nf/signup</loc>
-    <lastmod>2025-05-15</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -189,7 +189,7 @@
   <!-- Contact Us Page -->
   <url>
     <loc>https://ailearner.free.nf/contact</loc>
-    <lastmod>2025-05-29</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -197,7 +197,7 @@
   <!-- AI Tutor Page -->
   <url>
     <loc>https://ailearner.free.nf/personal-ai-tutor-online</loc>
-    <lastmod>2025-06-17</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -205,7 +205,23 @@
 <!-- Video Lectures Page -->
   <url>
     <loc>https://ailearner.free.nf/video-lectures</loc>
-    <lastmod>2025-09-03</lastmod>
+    <lastmod>2025-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Russian: Chapter 1 -->
+  <url>
+    <loc>https://ailearner.free.nf/introduction-to-ai-in-russian</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Chinese: Chapter 1 -->
+  <url>
+    <loc>https://ailearner.free.nf/introduction-to-ai-in-chinese</loc>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
