@@ -289,7 +289,7 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>AI Learner: Master Artificial Intelligence from Scratch (<?=date('Y')?> Guide)</h1>
+            <h1>AI Learner : Master Artificial Intelligence from Scratch (<?=date('Y')?> Guide)</h1>
             <p>AI Learner is a free and beginner-friendly website that teaches Artificial Intelligence (AI) to kids, students, and non-tech users. Our easy-to-follow chapters use simple language, real-world examples, and fun visuals to make learning AI exciting and understandable. Whether you're just curious or want to build your first AI project without coding, this is the perfect place to start your AI journey!</p>
             <a href="/ai-course" class="btn" aria-label="Start AI course">Start Learning</a>
         </div>
