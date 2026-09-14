@@ -1,5 +1,6 @@
 <?php
-$apiKey = '31bfe2c1947742769c4d84d921925651';
+require_once __DIR__ . '/env.php';
+$apiKey = env('ASSEMBLYAI_API_KEY');
 /*$audio_url = 'https://ailearner.free.nf/audio2.mp3'; // Must be a direct URL
 
 $data = json_encode([
