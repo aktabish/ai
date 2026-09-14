@@ -1,5 +1,11 @@
 RewriteEngine On
 
+# Block direct web access to env/config files and the FTP deploy state file.
+# .env carries live credentials in production — this must stay in place.
+<FilesMatch "^(\.env(\..*)?|env\.php|db\.php|\.ftp-deploy-sync-state\.json)$">
+    Require all denied
+</FilesMatch>
+
 # Remove unwanted query string ?i=1
 RewriteCond %{QUERY_STRING} (^|&)i=1(&|$)
 RewriteRule ^(.*)$ /$1? [R=301,L]
