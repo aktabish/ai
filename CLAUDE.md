@@ -27,18 +27,24 @@ follow for any change) and `.ai/known-issues.md` (open tech debt).
   denies direct web access to `.env`, `env.php`, and `db.php` regardless.
 
 ## Running locally
-- `php -d mysqli.default_socket=<socket> -S 127.0.0.1:8000` from the repo
-  root (the `-d` override is only needed if your local MySQL isn't on the
-  system-default socket). `db.php` auto-detects this SAPI and switches to
-  local credentials — no file edit needed.
+- `php -d mysqli.default_socket=<socket> -S 127.0.0.1:8000 router.php` from
+  the repo root (the `-d` override is only needed if your local MySQL isn't
+  on the system-default socket). `db.php` auto-detects this SAPI and
+  switches to local credentials — no file edit needed.
+- **Always pass `router.php`** as the built-in server's router. `.htaccess`
+  isn't read by `php -S` at all (Apache-only), and without a router, PHP's
+  built-in server silently falls back to serving `index.php`'s content for
+  *any* URL it can't match to a literal file — including every
+  extensionless link the site uses (`/ai-course`, nav links, etc.). That
+  looked exactly like "clicking a link does nothing": the URL bar updates,
+  the response is a real 200, but the content is always the homepage.
+  `router.php` mirrors the `.htaccess` rewrite rule instead (verified with
+  a real headless-browser click test, not just curl status codes — confirm
+  the page *title*/content changed, not just the HTTP status).
 - Needs a local MySQL with schema `ailearner`, user `root`, empty password
   (matches this file's own original WAMP-style defaults), loaded from
   `data.sql`.
-- Then open `http://localhost:8000/` in a browser. `.htaccess` isn't read
-  by the built-in server at all, but extensionless URLs (`/ai-course`) were
-  verified to still resolve to the matching `.php` file — PHP's built-in
-  server appears to fall back to this on its own. If a specific link ever
-  404s, request the `.php` filename directly instead.
+- Then open `http://localhost:8000/` in a browser.
 
 ## Conventions (follow these in every change)
 - All SQL: `mysqli` prepared statements with bound parameters. No string
