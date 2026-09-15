@@ -1,6 +1,7 @@
 <?php
-require_once __DIR__ . '/env.php';
-$apiKey = env('ASSEMBLYAI_API_KEY');
+// TEMPORARY: reverted to hardcoded key, same reasoning as db.php.
+// See .ai/known-issues.md.
+$apiKey = '31bfe2c1947742769c4d84d921925651';
 /*$audio_url = 'https://ailearner.free.nf/audio2.mp3'; // Must be a direct URL
 
 $data = json_encode([

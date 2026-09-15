@@ -15,12 +15,13 @@ follow for any change) and `.ai/known-issues.md` (open tech debt).
 - Static assets: `public/css`, `public/js`, `public/images`.
 - A Spanish translation lives under `es/` and mirrors the root pages
   (includes reference `../db.php`, `../layout/*` etc.).
-- Secrets: `env('KEY')` (see `env.php`) reads from `.env` in the repo root
-  (gitignored — copy `.env.example` for local dev, see there for the
-  required keys). In production, GitHub Actions writes `.env` from
-  repository secrets right before the FTP deploy step — **never** commit a
-  real `.env` or hardcode a credential in a `.php` file. `.htaccess` denies
-  direct web access to `.env`, `env.php`, and `db.php`.
+- Secrets: `db.php`/`audio-to-text.php` currently use hardcoded credentials
+  again (reverted 2026-09-15 after an env-based deploy caused an outage —
+  see `.ai/known-issues.md` for why). `env.php` (an `env('KEY')` loader
+  reading `.env`, gitignored) is still in the repo, unused, meant to be
+  re-adopted once the workflow is stable — don't build new secret-handling
+  on a different pattern in the meantime. `.htaccess` denies direct web
+  access to `.env`, `env.php`, and `db.php` regardless.
 
 ## Conventions (follow these in every change)
 - All SQL: `mysqli` prepared statements with bound parameters. No string

@@ -5,18 +5,38 @@ Check items off (`[x]`) only once they're actually fixed **and deployed**,
 not just patched locally. Severity: 🔴 critical · 🟠 high · 🟡 medium.
 
 ## 🔴 Critical
+- [ ] **Active incident (started 2026-09-14 ~14:46 UTC):** live site returns
+      an empty reply (no HTTP response at all) on every URL, including
+      `/robots.txt` intermittently and a zero-dependency diagnostic file
+      (`_diag.php`, no `db.php`/`env.php`/`.htaccess`-matched paths) that
+      also failed — ruling out credentials, `.env`, the `.htaccess`
+      `Require all denied` rule (already switched to `Order`/`Deny`), and
+      PHP 8-only syntax in `env.php` (already fixed, `str_starts_with` ->
+      `substr`) as sole causes. Leading theory: InfinityFree free-tier
+      hit-rate limiting/suspension, tripped by the volume of automated
+      requests across several failed deploy cycles' post-deploy smoke
+      checks plus manual diagnosis. **Needs the InfinityFree control panel**
+      (account status, error logs, configured PHP version) to confirm —
+      nothing further is diagnosable from outside. Delete `_diag.php` once
+      resolved.
 - [ ] Rotate the InfinityFree DB password and the AssemblyAI API key — both
       were committed in plaintext (`db.php`, `audio-to-text.php`) since the
       initial commit and remain in git history permanently. Rotation has to
       happen in the InfinityFree / AssemblyAI dashboards; nothing in this
       repo can fix it after the fact.
-- [x] Move DB + API credentials out of tracked files and into `.env` /
-      GitHub Actions secrets (`env.php`, `db.php`, `audio-to-text.php`,
+- [ ] Move DB + API credentials out of tracked files and into `.env` /
+      GitHub Actions secrets. Attempted 2026-09-14 (`env.php`,
       `.env.example`, `.github/workflows/deploy.yml`, `.htaccess` deny
-      rule). **Requires 5 new repository secrets** (`DB_HOST`, `DB_USER`,
-      `DB_PASS`, `DB_NAME`, `ASSEMBLYAI_API_KEY`) to be added in GitHub
-      before this branch is merged to `main`, or the live site loses its DB
-      connection on deploy.
+      rule) but **reverted 2026-09-15**: the deploy that switched `db.php`/
+      `audio-to-text.php` to `env()` was followed by a site-wide outage
+      (empty reply on every URL, including a zero-dependency diagnostic
+      file — see below), and untangling that from the secrets migration
+      while the site was down wasn't worth it. Explicit decision: go back
+      to hardcoded credentials for now, revisit the env-based approach
+      once the workflow is stable. `env.php` is still in the repo, unused,
+      ready to re-adopt. The CI "Check for hardcoded secrets" step
+      currently excludes `db.php`/`audio-to-text.php` for this reason —
+      remove that exclusion when this is re-adopted.
 - [ ] Delete `public/tfm/` (Tiny File Manager) — deployed with default
       credentials (`root` / `admin@123`, and `absar` shares the exact same
       password hash), rooted at `$_SERVER['DOCUMENT_ROOT']`. Full site
