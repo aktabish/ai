@@ -36,7 +36,12 @@ not just patched locally. Severity: 🔴 critical · 🟠 high · 🟡 medium.
       once the workflow is stable. `env.php` is still in the repo, unused,
       ready to re-adopt. The CI "Check for hardcoded secrets" step
       currently excludes `db.php`/`audio-to-text.php` for this reason —
-      remove that exclusion when this is re-adopted.
+      remove that exclusion when this is re-adopted. `db.php` now picks
+      between the local and production credential blocks automatically via
+      `php_sapi_name() === 'cli-server'` (2026-09-15), so local runs
+      (`php -S`) need no manual edit — see "Running locally" in
+      `CLAUDE.md`. Re-adopting env.php later should preserve this
+      auto-detection rather than go back to one hardcoded set.
 - [ ] Delete `public/tfm/` (Tiny File Manager) — deployed with default
       credentials (`root` / `admin@123`, and `absar` shares the exact same
       password hash), rooted at `$_SERVER['DOCUMENT_ROOT']`. Full site

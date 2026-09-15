@@ -17,11 +17,28 @@ follow for any change) and `.ai/known-issues.md` (open tech debt).
   (includes reference `../db.php`, `../layout/*` etc.).
 - Secrets: `db.php`/`audio-to-text.php` currently use hardcoded credentials
   again (reverted 2026-09-15 after an env-based deploy caused an outage —
-  see `.ai/known-issues.md` for why). `env.php` (an `env('KEY')` loader
-  reading `.env`, gitignored) is still in the repo, unused, meant to be
-  re-adopted once the workflow is stable — don't build new secret-handling
-  on a different pattern in the meantime. `.htaccess` denies direct web
-  access to `.env`, `env.php`, and `db.php` regardless.
+  see `.ai/known-issues.md` for why). `db.php` picks the local vs.
+  production credential set automatically based on `php_sapi_name()`
+  (`cli-server` = local `php -S`, anything else = InfinityFree) — no manual
+  edit needed to run locally, see "Running locally" below. `env.php` (an
+  `env('KEY')` loader reading `.env`, gitignored) is still in the repo,
+  unused, meant to be re-adopted once the workflow is stable — don't build
+  new secret-handling on a different pattern in the meantime. `.htaccess`
+  denies direct web access to `.env`, `env.php`, and `db.php` regardless.
+
+## Running locally
+- `php -d mysqli.default_socket=<socket> -S 127.0.0.1:8000` from the repo
+  root (the `-d` override is only needed if your local MySQL isn't on the
+  system-default socket). `db.php` auto-detects this SAPI and switches to
+  local credentials — no file edit needed.
+- Needs a local MySQL with schema `ailearner`, user `root`, empty password
+  (matches this file's own original WAMP-style defaults), loaded from
+  `data.sql`.
+- Then open `http://localhost:8000/` in a browser. `.htaccess` isn't read
+  by the built-in server at all, but extensionless URLs (`/ai-course`) were
+  verified to still resolve to the matching `.php` file — PHP's built-in
+  server appears to fall back to this on its own. If a specific link ever
+  404s, request the `.php` filename directly instead.
 
 ## Conventions (follow these in every change)
 - All SQL: `mysqli` prepared statements with bound parameters. No string
