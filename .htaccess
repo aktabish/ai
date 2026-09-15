@@ -2,8 +2,15 @@ RewriteEngine On
 
 # Block direct web access to env/config files and the FTP deploy state file.
 # .env carries live credentials in production — this must stay in place.
+# Using the legacy Order/Deny syntax (mod_access_compat), not "Require all
+# denied" (mod_authz_core) — this host's .htaccess AllowOverride may not
+# permit the latter (unconfirmed; the site had an outage after it was
+# briefly tried, though the cause wasn't fully isolated). This syntax
+# matches what was already proven to work here (see the commented-out
+# Order/Allow/Deny lines further down this file). See .ai/known-issues.md.
 <FilesMatch "^(\.env(\..*)?|env\.php|db\.php|\.ftp-deploy-sync-state\.json)$">
-    Require all denied
+    Order allow,deny
+    Deny from all
 </FilesMatch>
 
 # Remove unwanted query string ?i=1
